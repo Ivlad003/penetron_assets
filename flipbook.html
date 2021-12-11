@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Технологический регламент - Пенетро-Винница</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<script src="js/flipbook.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#container").flipBook({
+            pdfUrl:"teh-reglament.pdf",
+            pages:[],
+			tableOfContent:[
+				{title:"1 - Обложка", page:1}, 
+				{title:"2 - Содержание", page:4},
+				{title:"3 - Введение", page:4},
+				{title:"3 - Нормативно-техническая документация", page:5},
+				{title:"4 - Область применения технологического регламента", page:6},
+				{title:"5 - Краткие сведения о материалах", page:7},
+				{title:"5 - Краткие сведения о производителе", page:7},
+				{title:"6 - Описание и назначение материалов", page:8},
+				{title:"9 - Принцип действия материалов", page:11},
+				{title:"11 - Особенности материалов проникающего действия системы Пенетрон", page:13},
+				{title:"13 - Область применения материалов системы Пенетрон", page:15},
+				{title:"14 - Подготовка бетонной поверхности перед применением материалов системы Пенетрон", page:16},
+				{title:"15 - Приготовление составов", page:17},
+				{title:"16 - Технология выполнения гидроизоляционных работ с применением материалов системы Пенетрон ", page:18},
+				{title:"16 - Гидроизоляция бетонных элементов конструкций", page:18},
+				{title:"17 - Гидроизоляция трещин, швов, стыков, сопряжений, примыканий, вводов коммуникаций", page:19},
+				{title:"18 - Гидроизоляция технологических отверстий после удаления опалубки", page:20},
+				{title:"18 - Ликвидация напорных течей", page:20},
+				{title:"19 - Устройство новой горизонтальной гидроизоляции между бетонным фундаментом и стеной, выполненной из пористого материала", page:21},
+				{title:"19 - Восстановление горизонтальной гидроизоляции между бетонным фундаментом и стеной, выполненной из пористого материала", page:21},
+				{title:"20 - Гидроизоляция бетонных конструкций на стадии бетонирования", page:22},
+				{title:"21 - Гидроизоляция кирпичных и каменных конструкций", page:23},
+				{title:"22 - Уход за обработанной поверхностью", page:24},
+				{title:"22 - Нанесение декоративного покрытия", page:24},
+				{title:"22 - Методы и средства контроля качества выполненных работ ", page:24},
+				{title:"23 - Упаковка, хранение, транспортирование", page:25},
+				{title:"23 - Гарантии качества", page:25},
+				{title:"24 - Мероприятия по технике безопасности", page:26},
+				{title:"25 - Приложение 1. Технические характеристики материалов системы Пенетро", page:27},
+				{title:"32 - Приложение 2. Химическая стойкость и антикоррозионные свойства бетона после обработки материалами системы Пенетрон", page:34},
+				{title:"37 - Приложение 3. Список рекомендуемого оборудования, инструментов, индивидуальных средств защиты", page:39},
+				{title:"39 - Приложение 4. Типовые узлы", page:41},
+				{title:"56 - Приложение 5. Журнал технического контроля", page:58},
+				{title:"58 - Приложение 6. Акт освидетельствования скрытых работ по устройству гидроизоляции", page:60},
+			],
+
+				currentPage: {
+ 
+                enabled: true,
+ 
+                title: "Текущая страница"
+ 
+            },
+				btnDownloadPages: {
+ 
+                enabled: false,
+ 
+                title: "Download pages",
+ 
+                icon: "fa-download",
+ 
+                url: "images/pages.zip"
+ 
+            },
+			 btnSlideshow: {
+ 
+                enabled: false,
+ 
+                title: "Toggle slideshow",
+ 
+                icon: "fa-play",
+ 
+                iconAlt: "fa-pause"
+ 
+            },
+			 btnAutoplay: {
+ 
+                enabled: false,
+ 
+                title: "Autoplay",
+ 
+                icon: "fa-play"
+ 
+            },
+			btnSoundIfMobile: false,
+			logoImg: 'logo_penetron_vinnitsa_250.jpg', //url of logo image
+            logoUrl: 'http://penetron.vn.ua/', // url target 
+			logoCSS: 'float: right; padding-top: 10px; padding-right: 10px;',
+        });
+
+    })
+</script>
+
+</head>
+
+<body>
+<div id="container">
+    <p>Нажмите на обложку для начала чтения.</p>
+    <img src="images/book2/thumb1.jpg" />
+</div>
+
+</body>
+
+</html>
